@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+.container{
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.temperature-container{
+  margin: auto;
+  padding-top: 90px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temperature-card{
+  height: 380px;
+  width: 250px;
+  background-color: grey;
+  border-radius: 25px;
+  border: solid 4px rgb(57, 57, 57);
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.temperature-value-container{
+  padding-top: 50px;
+}
+
+.temperature-value{
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(57, 57, 57);
+  padding: 20px;
+  border: solid 2px white;
+  border-radius: 80px;
   color: white;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container{
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  margin-top: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  background-color: rgb(57, 57, 57);
+  padding: 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  border: solid 2px white;
+}
+
+.button:hover{
+  background-color: rgb(76, 75, 75);
+  transition: 1s;
+}
+
+.normal{
+  background-color:rgb(57, 57, 57);
+  transition: 1s;
+}
+
+.cold{
+  background-color: DarkCyan;
+  transition: 1s;
+}
+
+.veryCold{
+  background-color: DarkSlateBlue;
+  transition: 1s;
+}
+
+.hot{
+  background-color: DarkOrange;
+  transition: 1s;
+}
+
+.veryHot{
+  background-color: DarkRed;
+  transition: 1s;
+}
+
+.normalImage{
+  background-image: url(/src/normal.jpg);
+}
+
+.coldImage{
+  background-image: url(/src/cold.jpg);
+}
+
+.veryColdImage{
+  background-image: url(/src/veryCold.jpeg);
+}
+
+.hotImage{
+  background-image: url(/src/hot.jpg);
+}
+
+.veryHotImage{
+  background-image: url(/src/veryHot.jpg);
 }
